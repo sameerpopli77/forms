@@ -8,7 +8,7 @@
   </style>
   <script>
     const submissionId = new URLSearchParams(window.location.search).get('submission_id');
-    const apiUrl = 'https://script.google.com/macros/s/AKfycbwxgMnNTJqwVJs3Ni3i7WYHYVVZJyL788Rg4IraulkuTu2VZlQlN6XwgrmIcW3veKm2/exec'; // Replace with your Web App URL
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbwxgMnNTJqwVJs3Ni3i7WYHYVVZJyL788Rg4IraulkuTu2VZlQlN6XwgrmIcW3veKm2/exec'; // Google Script Web App URL
 
     async function pollForPDF() {
       const response = await fetch(`${apiUrl}?submission_id=${submissionId}`);
